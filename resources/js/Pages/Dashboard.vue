@@ -78,7 +78,7 @@ defineProps({
                                         <Link :href="route('contact.edit', contact.uuid)"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline mx-1">Edit
                                         </Link>
-                                        <Link :href="route('contact.delete', contact.uuid)"
+                                        <Link :href="route('contact.delete', contact.uuid)" onclick="return confirm('Are you sure?')"
                                             class="font-medium text-red-600 dark:text-red-500 hover:underline mx-1">Delete
                                         </Link>
                                     </td>

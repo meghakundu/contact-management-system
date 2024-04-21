@@ -69,7 +69,7 @@ defineProps({
                                         <Link :href="route('category.edit', category.uuid)"
                                             class="font-medium text-blue-600 dark:text-blue-500 hover:underline mx-1">Edit
                                         </Link>
-                                        <Link :href="route('category.delete', category.uuid)"
+                                        <Link :href="route('category.delete', category.uuid)" onclick="return confirm('Are you sure?')"
                                             class="font-medium text-red-600 dark:text-red-500 hover:underline mx-1">Delete
                                         </Link>
                                     </td>
